@@ -26,7 +26,7 @@ mongoose.connect(process.env.Connect_DB,{useUnifiedTopology:true,useNewUrlParser
     console.log(err);
 });
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static("public"));
