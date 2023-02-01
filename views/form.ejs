@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-screen grid md:grid-cols-2">
+        <div class="flex justify-center items-center bg-gray-50">
+          <form action="/post" method="post" class="w-full md:w-[50%] mx-auto py-5">
+            <span class="">
+                <img class="h-7 mb-5" src="/img/logo.png" alt="image">
+            </span>
+            <p class="text-[18px] font-semibold text-black">Welcome back</p>
+            <p class="text-[13px] font-light text-gray-600 mb-7">Happy to see you again!</p>
+
+            <div class="bg-red-300">
+                <p><%= %></p>
+            </div>
+            <div>
+                <label class="text-[12px] font-light mb-2" for="username">Username</label>
+                <div class="flex items-center border text-xs border-gray-500 py-4 px-3 mb-4 mt-2">
+                    <svg class="w-5 h-5 md:h-4 md:w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,255.98959,255.98959" style="fill:#000000;"> <g fill="#4d83ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M18,19v-2c0.45,-0.223 1.737,-1.755 1.872,-2.952c0.354,-0.027 0.91,-0.352 1.074,-1.635c0.088,-0.689 -0.262,-1.076 -0.474,-1.198c0,0 0.528,-1.003 0.528,-2.214c0,-2.428 -0.953,-4.5 -3,-4.5c0,0 -0.711,-1.5 -3,-1.5c-4.242,0 -6,2.721 -6,6c0,1.104 0.528,2.214 0.528,2.214c-0.212,0.122 -0.562,0.51 -0.474,1.198c0.164,1.283 0.72,1.608 1.074,1.635c0.135,1.197 1.422,2.729 1.872,2.952v2c-1,3 -9,1 -9,8h24c0,-7 -8,-5 -9,-8z"></path></g></g>
+                    </svg>
+                    <input class="pl-2 md:pl-5 bg-gray-50 outline-none border-none" type="text" name="" id="" placeholder="Email Address" />
+                </div>
+                <label class="text-[12px] font-light mb-2" for="password">Password</label>
+                <div class="flex items-center border text-xs border-gray-500 py-4 px-3 mb-4 mt-2">
+                    <svg class="w-5 h-5 md:h-3 md:w-3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,255.98959,255.98959" style="fill:#000000;">
+                        <g fill="#4d83ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M14.41406,11.14453c0.54297,-1.05078 0.85938,-2.24219 0.85938,-3.50781c0,-4.21484 -3.42187,-7.63672 -7.63672,-7.63672c-4.21484,0 -7.63672,3.41797 -7.63672,7.63672c0,4.21484 3.42188,7.63672 7.63672,7.63672c1.26562,0 2.45703,-0.3125 3.50391,-0.85937l4.13281,4.12891h2.17969c0,0.00391 0,2.18359 0,2.18359h2.18359v2.18359l1.08984,1.08984h3.27344v-3.27344zM5.5,8c-1.37891,0 -2.5,-1.11719 -2.5,-2.5c0,-1.38281 1.12109,-2.5 2.5,-2.5c1.38281,0 2.5,1.11719 2.5,2.5c0,1.38281 -1.11719,2.5 -2.5,2.5z"></path></g></g>
+                    </svg>
+                    <input class="pl-2 md:pl-5 outline-none bg-gray-50 border-none" type="text" name="" id="" placeholder="Password" />
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div class="flex items-center">
+                      <input id="remember_me" name="remember_me" type="checkbox"
+                        class="h-3 w-3 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded">
+                      <label for="remember_me" class="ml-2 block text-[13px] font-normal text-gray-500"> Keep me signed in </label>
+                    </div>
+                    <div class="text-sm">
+                      <a href="#" class="text-black text-[13px] font-normal"> Forgot password? </a>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="block w-full bg-[#428BCA] mt-4 py-3 text-white text-sm font-normal mb-2">Sign in</button>
+          </form>
+        </div>
+        <div class="bg-img flex items-baseline relative">
+            <div class="text-white text-sm font-semibold text-center absolute bottom-0 left-[30%]">
+                Copyright © 2023 All rights reserved.
+            </div>
+        </div>
+      </div>
+</body>
+</html>
