@@ -19,7 +19,7 @@ mongoose.connect(process.env.Connect_DB,{useUnifiedTopology:true,useNewUrlParser
             })
 
         } else {
-            console.log('db not conected');
+            console.log('db not connected');
         }
 })
 .catch((err) => {
