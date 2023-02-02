@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 // const flash = require('')
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 8001
 
 const app = express()
 
