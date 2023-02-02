@@ -40,5 +40,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/post', (req, res) => {
-    res.render('form',{error:'username or email does not exist'});
+    return res.render('form',{error:'username or email does not exist'});
+
 });
