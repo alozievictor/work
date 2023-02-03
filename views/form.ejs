@@ -18,10 +18,11 @@
             </span>
             <p class="text-[18px] font-semibold text-black">Welcome back</p>
             <p class="text-[13px] font-light text-gray-600 mb-5">Happy to see you again!</p>
-
-            <div class="bg-red-200 mb-3">
+            <% if(error) { %>
+              <div class="bg-red-200 mb-3">
                 <p class="text-sm text-black py-4 pl-3"><%= error %></p>
-            </div>
+              </div>
+            <% } %>
             <div>
                 <label class="text-[12px] font-light mb-2" for="username">Username</label>
                 <div class="flex items-center border text-xs border-gray-500 py-4 px-3 mb-4 mt-2">
